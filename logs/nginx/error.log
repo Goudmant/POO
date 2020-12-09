@@ -33,3 +33,5 @@
 2020/12/05 09:23:44 [alert] 1#1: worker process 8 exited on signal 9
 2020/12/05 09:23:44 [alert] 1#1: worker process 9 exited on signal 9
 2020/12/05 09:23:44 [alert] 1#1: worker process 10 exited on signal 9
+2020/12/09 10:09:50 [error] 7#7: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET / HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost:2021"
+2020/12/09 10:09:51 [error] 7#7: *2 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.19.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.19.0.4:9000", host: "localhost:2021", referrer: "http://localhost:2021/"
