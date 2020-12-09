@@ -19,12 +19,7 @@
     //echo $form->submit('Modifier'); //Créer un bouton pour soumettre le formulaire se nommant Modifier
     //echo $form->end(); //fermer le formulaire
 
-
-    require 'classEtape2.php';
-
-    $myHTML = new Html();
-    echo $myHTML->linkCSS("./Etape.css");
-    echo $myHTML->meta('testName','testContent');
+    require 'POO2.php';
 
     $myForm = new Form();
     $myForm->input('test','testtest','text');
@@ -33,15 +28,6 @@
     $myForm->input('test','testtest','radio');
     $myForm->input('test','testtest','checkbox');
     echo $myForm->getForm();
-
-
-    echo $myHTML->image('./');
-    echo $myHTML->a('./generateHTML.php',"a link");
-
-    echo $myHTML->script('./Etape.js');
-
-
-
 
 ?>
 
