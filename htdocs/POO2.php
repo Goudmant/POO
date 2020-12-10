@@ -21,8 +21,7 @@
         public function __stristr ( string $haystack , string $needle [, bool $before_needle = FALSE ] ) : string|false
 
         // nombre entier 
-        $b = '24';
-        public function 
+        public function __INT ($b = '24');
         if ($b = filter_var($b, FILTER_VALIDATE_INT)) {
             var_dump($b); //Affiche int(24).
         }

@@ -1,9 +1,7 @@
 <?php
     include 'POO2.php';
 
-    $myHTML = new Html();
-    echo $myHTML->linkCSS("./index.css");
-    echo $myHTML->meta('testName','testContent');
+
 
     $myForm = new Form();
     $myForm->input('test','testtest','text');
@@ -14,8 +12,5 @@
     echo $myForm->getForm();
 
 
-    echo $myHTML->image('cats');
-    echo $myHTML->a('./HTML.php',"a link");
 
-    echo $myHTML->script('./index.js');
 ?>
