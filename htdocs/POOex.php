@@ -7,7 +7,7 @@ interface transpiration
 
 class becodekeller implements transpiration
 {
-    private $firstname;
+    public $firstname;
     public $lastname; 
     protected $age;
 
@@ -15,7 +15,7 @@ class becodekeller implements transpiration
     {
         $this->firstname = $firstname;
         $this->lastname = $lastname;
-        $this->setAge = ($age);
+        $this->setAge($age);
 
     }
 
@@ -44,7 +44,7 @@ class becodekeller implements transpiration
     }
 }
 
-class coach  extends becodekeller {
+class coach extends becodekeller {
 
     private $classe;
 
@@ -65,7 +65,7 @@ class coach  extends becodekeller {
     fairetranspirer($coach);
     fairetranspirer($becodekeller);
 
-    function fairetranspirer (transpirer $objet) {
+    function transpirer (transpirer $objet) {
         var_dump("Je vais vous faire suer avec l'auto-apprentisage :{$objet->transpirer()}");
     }
 
