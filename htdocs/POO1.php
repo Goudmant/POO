@@ -1,14 +1,14 @@
 <?php
     
     require_once "connect.php";
-    $pdo = DataBase::connect("my_database");
+    $pdo = DataBase::connect("Poo");
     var_dump($pdo);
     $count = new DataBase;
-    echo $count -> countTable($pdo, "*", "participant");
+    echo $count -> countTable($pdo, "*", "Pooexercices");
     
     
 
-    require 'POO2.php';
+    require_once 'POO2.php';
 
     
     echo $myForm = new Form();
